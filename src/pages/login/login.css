@@ -2,6 +2,8 @@
 
 main {
   padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
 }
 
 .message {
@@ -19,19 +21,19 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 1rem;
 
   .form-control {
     position: relative;
     margin: 20px 0 40px;
     width: 300px;
-    
+
     label {
       position: absolute;
       font-size: 14px;
       font-weight: 400;
       position: absolute;
-       top: 15px;
+      top: 15px;
       left: 0;
     }
 
@@ -54,7 +56,7 @@ form {
   }
 }
 
-.form-control label span{
+.form-control label span {
   display: inline-block;
   font-size: 18px;
   min-width: 5px;
@@ -62,17 +64,16 @@ form {
 }
 
 .form-control input:focus + label span,
-.form-control input:valid + label span{
+.form-control input:valid + label span {
   color: #000;
   transform: translateY(-30px);
 }
 
-
-small{
+small {
   color: var(--orange);
 }
 
-.btn{
+.btn {
   font-size: 16px;
   display: inline-block;
   width: 100%;
@@ -80,4 +81,42 @@ small{
   border-radius: 5px;
 }
 
-.media-icon
+.or {
+  color: #d9d9d9;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.left,
+.right {
+  display: inline-block;
+  width: 38%;
+  height: 1px;
+  background-color: #d9d9d9;
+  vertical-align: middle;
+}
+
+.media-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  img {
+    padding: 1rem;
+    background-color: #fff;
+    filter: drop-shadow(0 0 5px 3px #696969);
+  }
+
+  .fa-facebook {
+    padding: 1rem;
+    color: #035b81;
+    background-color: #fff;
+    filter: drop-shadow(0 0 5px 3px #696969);
+    font-size: 23px;
+  }
+}
+
+.text {
+  text-align: center;
+}

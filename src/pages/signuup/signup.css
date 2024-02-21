@@ -1,0 +1,17 @@
+@import"/public/public.css";
+@import"../login/login.css";
+
+.container{
+  display: flex;
+  flex-direction: column;
+  gap: 1x;
+}
+
+h1 {
+  font-size: 20px;
+
+  small{
+    font-size: 11px;
+    color: #121212;
+  }
+}

@@ -1,19 +1,19 @@
 @import "./public/public.css";
 
-body{
+body {
   font-family: "Poppins", sans-serif;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url('public/image/bg.png');
+  background-image: url("public/image/bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-main{
+main {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,7 +24,7 @@ main{
 
 .icon,
 .buttom-section,
-.caption{
+.caption {
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -34,28 +34,36 @@ main{
   gap: 2rem;
 }
 
+.icon img {
+  width: 99px;
+  height: 99px;
+}
 
-.icon  img{
-    width: 99px;
-    height: 99px;
-  }
-
-.icon span{
+.icon span {
   color: #fff;
   font-family: inherit;
   font-weight: 600;
   font-size: 2rem;
 }
 
-.caption h1{
-  font-family: "Poppins", sans-serif;
-  font-size: 50px;
-  font-weight: 600;
-  color: #fff;
-  text-align: center;
+.caption {
+  h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+  }
+
+  small{
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: inherit;
+    color: #fff;
+  }
 }
 
-.btn{
+.btn {
   height: fit-content;
   width: fit-content;
   padding: 15px 50px;

@@ -15,28 +15,38 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="login.css" />
-    <title>login-page</title>
+    <link rel="stylesheet" href="signup.css" />
+    <title>Singup-page</title>
   </head>
   <body>
-    <main>
+    <main class="container">
       <h1 class="message">
-        Hello,<br />
-        <span>Welcome Back</span>
+        Create an account<br />
+        <small>Let &rsquo;s help you set up your account, it won &rsquo;t take long.</small>
       </h1>
 
       <form action="" class="form">
         <div class="form-control">
+          <input type="name" />
+          <label for="name">Name</label>
+        </div>
+
+        <div class="form-control">
           <input type="email" />
           <label for="email">Email</label>
         </div>
-
+        
         <div class="form-control">
           <input type="password" />
           <label for="password">Enter Password</label>
         </div>
 
-        <small>Forgot Password</small>
+        <div class="form-control">
+          <input type="password" />
+          <label for="password">Confirm Password</label>
+        </div>
+
+        <label for=""><input type="checkbox">Accept terms &amp;  Condition</label>
 
         <button class="btn">
           <a href="/src/pages/user-recipe/user-recipe.html">
@@ -45,7 +55,7 @@
           </a>
         </button>
 
-        <small class="or"><span class="left"></span>Sign in with<span class="right"></span></small>
+        <small class="or"><span class="left"></span>Sign up with<span class="right"></span></small>
 
         <div class="media-icon">
           <img src="/public/image/gogle-icon.png" alt="google icon">
@@ -53,8 +63,8 @@
         </div>
 
         <p class="text">
-          Do not have an account
-          <small><a href="../signuup/signup.html">sign up</a></small>
+          Already have an account
+          <small><a href="">sign in</a></small>
         </p>
       </form>
     </main>
