@@ -1,0 +1,69 @@
+@import "./public/public.css";
+
+body{
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('public/image/bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15rem;
+  width: 100%;
+  padding: 4rem;
+}
+
+.icon,
+.buttom-section,
+.caption{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+
+.icon  img{
+    width: 99px;
+    height: 99px;
+  }
+
+.icon span{
+  color: #fff;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.caption h1{
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+}
+
+.btn{
+  height: fit-content;
+  width: fit-content;
+  padding: 15px 50px;
+  color: #fff;
+  background-color: var(--green);
+  border-radius: 10px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}

@@ -1,0 +1,83 @@
+@import "/public/public.css";
+
+main {
+  padding: 20px;
+}
+
+.message {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.message span {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+
+  .form-control {
+    position: relative;
+    margin: 20px 0 40px;
+    width: 300px;
+    
+    label {
+      position: absolute;
+      font-size: 14px;
+      font-weight: 400;
+      position: absolute;
+       top: 15px;
+      left: 0;
+    }
+
+    input {
+      background-color: transparent;
+      border: 0;
+      border-bottom: 2px solid #d9d9d9;
+      display: block;
+      width: 100%;
+      padding: 15px 0;
+      font-size: 18px;
+      color: #000;
+
+      &:focus,
+      valid {
+        outline: 0;
+        border-bottom-color: var(--green);
+      }
+    }
+  }
+}
+
+.form-control label span{
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span{
+  color: #000;
+  transform: translateY(-30px);
+}
+
+
+small{
+  color: var(--orange);
+}
+
+.btn{
+  font-size: 16px;
+  display: inline-block;
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.media-icon
