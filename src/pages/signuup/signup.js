@@ -7,7 +7,3 @@ labels.forEach(label => {
     style="transition-delay: ${idx * 50}ms">${letter}</span>`)
     .join('')
 })
-
-export{
-    labels
-}
